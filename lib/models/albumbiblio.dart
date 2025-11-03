@@ -13,6 +13,14 @@ class AlbumBiblio {
   Album getAlbumByIndex(int index) {
     return _listaAlbumes[index];
   }
+
+  void removeAlbum(int index) {
+    _listaAlbumes.removeAt(index);
+  }
+
+  void updateAlbum(int index, Album album) {
+    _listaAlbumes[index] = album;
+  }
 }
 
 class Album {
